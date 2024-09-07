@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Custom suite" verbose="1" parallel="tests" thread-count="2" configfailurepolicy="continue">
+
+    <test name="Amazon" preserve-order="true">
+        <classes>
+            <class name="com.demo.runner.AmazonRunner"/>
+        </classes>
+    </test>
+     <test name="Applitools" preserve-order="true">
+        <classes>
+            <class name="com.demo.runner.ApplitoolsRunner"/>
+        </classes>
+    </test>
+</suite>
